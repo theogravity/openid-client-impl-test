@@ -25,7 +25,8 @@
     "changelog:prepare": "changelog-version prepare",
     "changelog:release": "changelog-version release",
     "lint": "prettier-standard src/**/*.ts && standard src/**/*.ts",
-    "ts-node-dev": "ts-node-dev"
+    "ts-node-dev": "ts-node-dev",
+    "start:dev": "ts-node-dev src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -37,7 +38,13 @@
     "url": "https://github.com/theogravity/boilerplate/issues"
   },
   "homepage": "https://github.com/theogravity/boilerplate#readme",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "openid-client": "^2.5.0"
+  },
   "devDependencies": {
     "@theo.gravity/changelog-version": "2.1.8",
     "@theo.gravity/version-bump": "1.1.1",
